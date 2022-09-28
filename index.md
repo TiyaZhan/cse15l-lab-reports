@@ -18,9 +18,9 @@ Hello World
 Split
 ---
 
-'System.out.println' is print method
+`System.out.println` is print method
 
-'''
+```
 int a = 2;
 int b = 3;
-'''
+```
