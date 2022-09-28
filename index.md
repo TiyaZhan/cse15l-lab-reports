@@ -4,7 +4,10 @@ Hello World
 # Bye
 ## Bye
 [Link](https://tiyazhan.github.io/cse15l-lab-reports/random.html)
-![Image](https://en.wiktionary.org/wiki/cat#/media/File:Cat03.jpg)
+![Image][1]
+⋮
+[1]: [http://url/b.jpg](https://en.wiktionary.org/wiki/cat#/media/File:Cat03.jpg)
+
 > Bye
 > hi
 
