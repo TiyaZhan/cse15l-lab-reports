@@ -24,6 +24,8 @@ less -N technical/911report/chapter-1.txt
      12 Boarding the Flights
 ...(Above is just part of the output, the entire ouput is too long)
 ```
+- Comments: This Command displays the content of file `technical/911report/chapter-1.txt` on a separate screen. With `-N` option, the line number is displayed along with the file.
+
 
 ## Example 2
 *Command:*
@@ -55,7 +57,7 @@ less -N technical/biomed/1468-6708-3-1.txt
      21         weight standards be adjusted upwards for age [ 8 ] . Such
      22         recommendations remain controversial, however, because the
 ```
-
+- Comments: This Command displays the content of file `technical/biomed/1468-6708-3-1.txt` on a separate screen. With `-N` option, the line number is displayed along with the file, so it is easier to search for and refer to lines with line numbers.
 ## Example 3
 *Command*
 ```
@@ -86,6 +88,8 @@ less -N technical/government/Alcohol_Problems/Session4-PDF.txt
      21 emergency care to convince patients of the need for behavior
      22 change.2 This process may identify patients who have not yet
 ```
+- Comment: This command displays the content of file `technical/government/Alcohol_Problems/Session4-PDF.txt` in a separate screen. 
+
 This `-N` option is showing the line number of the file that is displayed by the `less` command. It is useful in the way that we can easily reference a specific lind using the line number. Since `less` is commonly used in large files, having line numbers for each line is really useful for referencing.
 
 
@@ -117,11 +121,12 @@ Boarding the Flights
     Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
 (base) Tinas-MacBook-Pro:15l-docsearch tinazhan$ 
 ```
+- Comments: This Command displays the content of file `technical/911report/chapter-1.txt` and with the `-X` option allow the text or contents displayed to remain on the screen after `less` exits. It is useful if we want to refer to the line of the file in the next command.
 
 ## Example 2
 *Command:*
 ```
-less -X technical/biomed/
+less -X technical/biomed/1468-6708-3-1.txt
 ```
 *Output*
 ```
@@ -150,6 +155,9 @@ less -X technical/biomed/
         recommendations remain controversial, however, because the
 (base) Tinas-MacBook-Pro:15l-docsearch tinazhan$ 
 ```
+
+- Comments: This Command displays the content of file `technical/biomed/1468-6708-3-1.txt` with `-X` option the portion of the introduction of this text file remains on the terminal after we exit from `less`.
+
 ## Example 3
 *Command*
 ```
@@ -205,6 +213,8 @@ lead to novel interventions.
 
 (base) Tinas-MacBook-Pro:15l-docsearch tinazhan$ 
 ```
+- Comment: This command displays the content of file `technical/government/Alcohol_Problems/Session4-PDF.txt` and with the `-X` option, begnining part of the text remains on the terminal after we exit from `less`. Only a portion of the file remains instead of the entire file. 
+
 
 The `-X` command allow the text or contents displayed to remain on the screen after `less` exits. For the output of the example, I included the command line before and after the text displayed to show that the text remains on the screen after exits. If we need to refer to the contents of the file for the next command, it is useful to have the contents on the screen, so that we can direcly read the content while typing the next command. 
 
@@ -231,6 +241,10 @@ Interagency Collaboration. The FAA and NORAD had developed protocols for working
 ither from joint use radar or from the relevant FAA air traffic control facility. Every attempt w
 ould be made to have the hijacked aircraft squawk 7500 to help NORAD track it.
 ```
+
+- Comments: This Command displays the content of file `technical/911report/chapter-1.txt` on a separate screen. With `-p` option, the text displayed starts with the first occurance of the word `Interagency`. It is helpful to look up stuff in a text.
+
+
 ## Example 2
 *Command*
 ```
@@ -261,6 +275,7 @@ less -p "Conclusion" technical/biomed/1468-6708-3-1.txt
         Abbreviations
         BMI Body mass index
 ```
+- Comments: This Command displays the content of file `technical/biomed/1468-6708-3-1.txt` on a separate screen. With `-p` option, the text displays jumps to the Concusion section of the report, because `-p` displays the first occurance of the word `Conclusion` in the file. It is useful to navigate through different section of a report. 
 
 ## Example 3
 *Command*
@@ -292,5 +307,7 @@ alcohol problems: a review. Addiction 1993;88:315-35.
 randomized control trials addressing brief interventions in heavy
 alcohol drinkers. J Gen Intern Med 1997;12:274-83.
 ```
+- Comment: This command displays the content of file `technical/government/Alcohol_Problems/Session4-PDF.txt` in a separate screen. The option `-p "Reference"` displays the text starting with the first occurence of `Reference`.
 
-The option `-p "(text to search)"` will display the contents starting with the first occurence of `text to search`. For example, `-p "Reference"` in example 3 displays the text starting with the first occurence of `Reference`. This option can be useful when you only want to read a specific portion of the file. Thus, you can use this option to skip through unwanted material in order to save time and effort to look for the specific element.
+
+The option `-p "(text to search)"` will display the contents starting with the first occurence of `text to search`.  This option can be useful when you only want to read a specific portion of the file. Thus, you can use this option to skip through unwanted material in order to save time and effort to look for the specific element.
